@@ -31,4 +31,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: 7yhong/nginx-rtmp:latest,7yhong/nginx-rtmp:${{ steps.meta.outputs.tag }}
+          tags: 7yhong/nginx-rtmp:latest,7yhong/nginx-rtmp:${{ steps.branch_name.outputs.SOURCE_TAG }}
