@@ -31,4 +31,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: 7yhong/nginx-rtmp:latest, 7yhong/nginx-rtmp:${GITHUB_REF#refs/tags/}
+          tags: |
+            7yhong/nginx-rtmp:latest
+            7yhong/nginx-rtmp:${GITHUB_REF#refs/tags/}
